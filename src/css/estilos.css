@@ -26,6 +26,36 @@
     --color-secondary-1: #f5c518;
 }
 
+a.btn {
+    text-decoration: none;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: transparent;
+    transition: background-color 0.3 ease;
+}
+
+.btn-mobile {
+    font-size: 1.5rem;
+}
+
+.btn-default {
+    background-color: var(--color-primary-1);
+    color: var(--color-neutral-0);
+
+    &:hover {
+        background-color: var(--color-primary-2);
+    }
+}
+
+
+
 header {
     background-color: var(--color-neutral-1);
     padding: 12px 4%;
@@ -86,5 +116,27 @@ header {
 
 }
 
+@media (min-width: 769px) {
+    header {
+        .navbar {
+            .btn-mobile {
+                display: none;
+            }
+        }
 
+        ul {
+            display: flex;
+            flex-direction: row;
+            position: static;
+            gap: 1rem;
+            width: auto;
+            padding: 0;
+        }
+
+        .btn-default {
+            display: block;
+        }
+
+    }
+}
 
