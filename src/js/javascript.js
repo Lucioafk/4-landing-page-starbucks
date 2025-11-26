@@ -1,5 +1,5 @@
 const mobileBtn = document.querySelector('.btn-mobile');
-const navegar = document.querySelector('#nav');
+const navegar = document.querySelector('#nav-links');
 const icon = document.querySelector('.btn-mobile i');
 
 mobileBtn.addEventListener ('click', () => {
